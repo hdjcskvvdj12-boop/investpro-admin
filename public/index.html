@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>InvestPro Admin</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="login" class="login-wrap">
+  <form id="loginForm" class="login-card">
+    <div class="brand-mark">IP</div><h1>InvestPro Admin</h1><p>নিরাপদ অ্যাডমিন লগইন</p>
+    <label>অ্যাডমিন ইমেইল<input name="email" type="email" autocomplete="username" required></label>
+    <label>পাসওয়ার্ড<input name="password" type="password" autocomplete="current-password" required></label>
+    <button class="primary" type="submit">লগইন করুন</button><div id="loginError" class="error"></div>
+  </form>
+</div>
+<div id="app" class="shell hidden">
+  <aside class="sidebar"><div class="brand"><span class="brand-mark">IP</span><div><b>InvestPro</b><small>ADMIN CONSOLE</small></div></div>
+    <nav>
+      <button class="nav active" data-page="overview">▦ <span>ড্যাশবোর্ড</span></button>
+      <button class="nav" data-page="users">♙ <span>ইউজার ম্যানেজমেন্ট</span></button>
+      <button class="nav" data-page="deposits">↓ <span>ডিপোজিট রিভিউ</span></button>
+      <button class="nav" data-page="withdrawals">↑ <span>উইথড্র রিভিউ</span></button>
+      <button class="nav" data-page="transactions">⇄ <span>লেনদেনের ইতিহাস</span></button>
+      <button class="nav" data-page="audit">☷ <span>অ্যাডমিন লগ</span></button>
+    </nav>
+    <div class="side-bottom"><small id="adminEmail"></small><button id="logout" class="logout">লগআউট ↗</button></div>
+  </aside>
+  <main class="main"><header class="topbar"><div><span class="eyebrow">INVESTPRO / MANAGEMENT</span><h2 id="pageTitle">ড্যাশবোর্ড</h2></div><div class="admin-pill"><span class="dot"></span> অ্যাডমিন</div></header>
+    <div id="notice" class="notice hidden"></div><section id="content"><div class="loading">লোড হচ্ছে…</div></section>
+    <footer>InvestPro Admin · সংবেদনশীল তথ্য সুরক্ষিত রাখুন · সব আর্থিক কাজের আগে যাচাই করুন</footer>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body></html>
